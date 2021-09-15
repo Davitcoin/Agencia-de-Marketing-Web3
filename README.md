@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+
 <html lang="en">
     <head>
-        <div> <iframe src='https://my.spline.design/untitled-82cdbf0e546a0665e54319210629cdb8/' frameborder='0' width='100%' height='100%'></iframe> <title>HTML Elements</title> </div>  
+        <div> <iframe src='https://my.spline.design/untitled-82cdbf0e546a0665e54319210629cdb8/' frameborder='0' width='100%' height='300%'></iframe> 
+            <title>HTML Elements</title> </div>  
         
     </head>
     <body>
-        <background><div> <iframe src='https://my.spline.design/untitled-82cdbf0e546a0665e54319210629cdb8/' frameborder='0' width='100%' height='100'></iframe></div><background/>
         
 <!-- We can create headings using h1 through h6 as tags. -->
         <h1>A Large Heading</h1>
