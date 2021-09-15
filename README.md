@@ -1,37 +1,65 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <div> <iframe src='https://my.spline.design/untitled-82cdbf0e546a0665e54319210629cdb8/' frameborder='0' width='100%' height='100%'></iframe> <title>HTML Elements</title> </div>  
+        
+    </head>
+    <body>
+        <background><div> <iframe src='https://my.spline.design/untitled-82cdbf0e546a0665e54319210629cdb8/' frameborder='0' width='100%' height='100'></iframe></div><background/>
+        
+<!-- We can create headings using h1 through h6 as tags. -->
+        <h1>A Large Heading</h1>
+        <h2>A Smaller Heading</h2>
+        <h6>The Smallest Heading</h6>
 
-You can use the [editor on GitHub](https://github.com/Davitcoin/Davitcoin.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+        <!-- The strong and i tags give us bold and italics respectively. -->
+        A <strong>bold</strong> word and an <i>italicized</i> word!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+        <!-- We can link to another page (such as cs50's page) using a. -->
+        View the <a href="https://cs50.harvard.edu/">CS50 Website</a>!
 
-### Markdown
+        <!-- We used ul for an unordered list and ol for an ordered one. both ordered and unordered lists contain li, or list items. -->
+        An unordered list:
+        <ul>
+            <li>foo</li>
+            <li>bar</li>
+            <li>baz</li>
+        </ul>
+        An ordered list:
+        <ol>
+            <li>foo</li>
+            <li>bar</li>
+            <li>baz</li>
+        </ol>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+        <!-- Images require a src attribute, which can be either the path to a file on your computer or the link to an image online. It also includes an alt attribute, which gives a description in case the image can't be loaded. -->
+        An image:
+        <img src="../../images/duck.jpeg" alt="Rubber Duck Picture">
+        <!-- We can also see above that for some elements that don't contain other ones, closing tags are not necessary. -->
 
-```markdown
-Syntax highlighted code block
+        <!-- Here, we use a br tag to add white space to the page. -->
+        <br/> <br/>
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Davitcoin/Davitcoin.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+        <!-- A few different tags are necessary to create a table. -->
+        <table>
+            <thead>
+                <th>Ocean</th>
+                <th>Average Depth</th>
+                <th>Maximum Depth</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pacific</td>
+                    <td>4280 m</td>
+                    <td>10911 m</td>
+                </tr>
+                <tr>
+                    <td>Atlantic</td>
+                    <td>3646 m</td>
+                    <td>8486 m</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </body>
+<html>
