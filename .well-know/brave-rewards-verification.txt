@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: dmark.me
+Token: deaed92d816de32d75bb3e956536c0eeec72245e34535cb3d00dfa2efce8cdd7
