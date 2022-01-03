@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Pagina web Dmark</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Almendra+SC&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amethysta&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiko&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anaheim&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Andada&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Antonio&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Article-List.css">
+    <link rel="stylesheet" href="assets/css/Botton-de-texto.css">
+    <link rel="stylesheet" href="assets/css/Card-with-popup-text-effect.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Header-Blue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/Projects-Clean.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Team-Boxed.css">
+</head>
+
+<body style="color: rgb(255,255,255);background: rgb(254,254,254);"><div id="particles-js"></div>
+<header>
+
+</header>
+<section class="text-center content-section" id="about">
+    <nav class="particles-js">
+</nav></section>
+
+<script src="app.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/particles.min.js"></script>
+    <nav class="navbar navbar-light navbar-expand-md">
+        <div class="container-fluid"><img src="assets/img/Logo%20DM%20(Naranja).png" width="100" height="100"><a class="navbar-brand" href="#">DMARK MÉXICO&nbsp;</a>
+            <div class="collapse navbar-collapse" id="navcol-3">
+                <ul class="navbar-nav">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <nav class="navbar navbar-light navbar-expand-lg navigation-clean">
+                                <div class="container"><button id='loginButton' onclick="" class="mx-auto rounded-md p-2 bg-black-500 text-white">
+      Conectar Wallet
+    </button>
+    <p id='userWallet' class='text-lg text-black-600 my-2'></p>
+
+  <script>
+    window.userWalletAddress = null
+    const loginButton = document.getElementById('loginButton')
+    const userWallet = document.getElementById('userWallet')
+
+    function toggleButton() {
+      if (!window.ethereum) {
+        loginButton.innerText = 'MetaMask is not installed'
+        loginButton.classList.remove('bg-purple-500', 'text-white')
+        loginButton.classList.add('bg-gray-500', 'text-gray-100', 'cursor-not-allowed')
+        return false
+      }
+
+      loginButton.addEventListener('click', loginWithMetaMask)
+    }
+
+    async function loginWithMetaMask() {
+      const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
+        .catch((e) => {
+          console.error(e.message)
+          return
+        })
+      if (!accounts) { return }
+
+      window.userWalletAddress = accounts[0]
+      userWallet.innerText = window.userWalletAddress
+      loginButton.innerText = 'Sign out'
+        
+
+      loginButton.removeEventListener('click', loginWithMetaMask)
+      setTimeout(() => {
+        loginButton.addEventListener('click', signOutOfMetaMask)
+      }, 200)
+    }
+
+    function signOutOfMetaMask() {
+      window.userWalletAddress = null
+      userWallet.innerText = ''
+      loginButton.innerText = 'Conectar Wallet'
+
+      loginButton.removeEventListener('click', signOutOfMetaMask)
+      setTimeout(() => {
+        loginButton.addEventListener('click', loginWithMetaMask)
+      }, 200)
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      toggleButton()
+    });
+  </script><button data-bs-toggle="collapse" data-bs-target="#navcol-3" class="navbar-toggler" style="color: rgb(0,0,0);border-radius: 2px;border-style: groove;border-color: rgb(0,0,0);padding-top: 8px;padding-bottom: 8px;width: 80px;margin-bottom: 4px;margin-top: -2px;margin-right: 0px;margin-left: 0px;padding-right: 13px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                                    <div class="collapse navbar-collapse" id="navcol-2" style="padding-left: 0px;">
+                                        <ul class="navbar-nav ms-auto" style="/*margin-left: 350;*/">
+                                            <li class="nav-item"><a class="nav-link" href="Home%20page.html" target="_top">HOME</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="Acerca.html" target="_top">ACERCA</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="Servicios.html" target="_top">SERVICIOS</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="Contacto.html" target="_top">CONTACTO</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8" style="padding-top: 30px;margin-top: 39px;">
+                <p class="text-center" data-aos="fade-down" data-aos-duration="1800" style="font-size: 30px;color: rgb(0,0,0);font-family: 'Source Sans Pro', sans-serif;text-align: center;"><strong>Dmark</strong>&nbsp;es una startup que ofrece a sus clientes la posibilidad de implementar la tecnología más avanzada en sus proyectos y negocios, ofreciendo una gama de servicios integrales para tus proyectos.<br><br>La innovación será tu fuerte con nosotros, conoce nuestros servicios dando clic&nbsp;<a href="#" style="color: rgb(0,0,0);text-decoration: underline;font-weight: bold;font-size: 28px;text-align: center;">Aquí</a>.</p>
+                <h1 style="color: rgb(0,0,0);font-family: Amiko, sans-serif;text-align: left;"></h1>
+            </div>
+            <div class="col"><img src="assets/img/Logo%20DM%20(Naranja).png" width="350" height="350"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p style="height: 100px;">Paragraph</p>
+            </div>
+        </div>
+    </div>
+    <section class="projects-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Nuestros desarrollos</h2>
+                <p class="text-center" style="color: rgb(0,0,0);font-size: 29px;font-family: 'Source Sans Pro', sans-serif;">Conoce nuestros desarrollos más actuales</p>
+            </div>
+            <div class="row projects">
+                <div class="col-sm-6 col-lg-4 item"><img class="img-fluid" src="assets/img/pexels-markus-spiske-360591.jpg" width="356" height="257">
+                    <h3 class="name">Software de gestión</h3>
+                    <p class="description" style="font-family: 'Source Sans Pro', sans-serif;font-size: 20px;color: rgb(59,59,59);">Creamos las herramientas de software personalizado en el que se logra automatizar tareas para tu comodidad, como lo es un sistema de control de inventario</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item"><img class="img-fluid" src="assets/img/pexels-cottonbro-5077044.jpg" width="356" height="237">
+                    <h3 class="name">Páginas web 3.0</h3>
+                    <p style="font-family: 'Source Sans Pro', sans-serif;font-size: 20px;color: rgb(59,59,59);" class="description">Un ejemplo es nuestra página, la cual cuenta con funcionalidades que corren sobre Blockchain lo cúal permite una mayor versatilidad y seguridad en pagos.</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item"><img class="img-fluid" src="assets/img/pexels-andrea-piacquadio-3760067.jpg">
+                    <h3 class="name">Smart Contracts</h3>
+                    <p style="font-family: 'Source Sans Pro', sans-serif;font-size: 20px;color: rgb(59,59,59);" class="description">Desarrollamos nuestra página web con esta funcionalidad para que puedas probarla y decidir si implementarla en tu sitio, puedes acceder a ella desde la pagina HOME</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/const%20accounts%20=%20await%20ethereum.request(.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
+</body>
+
+</html>

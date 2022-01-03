@@ -81,6 +81,7 @@ button {
   padding-bottom: inherit;
 }
 
-div {
+.ms-auto {
+  margin-left: auto;
 }
 
