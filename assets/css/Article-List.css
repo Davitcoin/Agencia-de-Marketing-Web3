@@ -85,3 +85,8 @@ button {
   margin-left: auto;
 }
 
+.navbar-toggler:focus {
+  text-decoration: #000000;
+  height: 50px;
+}
+
