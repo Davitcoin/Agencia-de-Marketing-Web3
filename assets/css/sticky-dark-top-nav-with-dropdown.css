@@ -2,7 +2,7 @@
   background: #222222;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: #f2f5f8;
+  color: #f7f7f7;
   border-radius: 0;
   box-shadow: none;
   border: none;
@@ -88,8 +88,8 @@
 }
 
 .navigation-clean-button.navbar-default .navbar-nav > li > a:focus, .navigation-clean-button.navbar-default .navbar-nav > li > a:hover {
-  color: #e04c40 !important;
-  border-top: solid 1px #e04c40;
+  color: #0085ff !important;
+  border-top: solid 1px #00e0ff;
   background-color: transparent;
   transition: background 0.2s ease, padding 0.8s linear;
   transition: background-color 0.25s;
@@ -98,7 +98,7 @@
 .navigation-clean-button .navbar-nav > li > .dropdown-menu {
   margin-top: -5px;
   box-shadow: 0 4px 8px rgba(0,0,0,.1);
-  background-color: #222222;
+  background-color: rgba(255,255,255,0.54);
   border-radius: 2px;
 }
 
@@ -107,11 +107,11 @@
   font-size: 14px;
   font-weight: 300;
   font-family: 'Roboto';
-  color: #df4c40;
+  color: #000000;
 }
 
 .navigation-clean-button .dropdown-menu > li > a:focus, .navigation-clean-button .dropdown-menu > li > a:hover {
-  background: #df4c40;
+  background: #0085ff;
   color: inherit;
   transition: background-color 0.25s;
   transition-timing-function: ease;
@@ -132,19 +132,19 @@
 .navigation-clean-button .action-button, .navigation-clean-button .action-button:active {
   background: transparent;
   border-radius: 0;
-  color: #e04c40;
+  color: #000000;
   box-shadow: none;
-  border: 1px solid #e04c40;
+  border: 1px solid #000000;
   text-shadow: none;
   padding: 10px 22px;
   transition: background-color 0.25s;
 }
 
 .navigation-clean-button .action-button:hover {
-  background: #e04c40;
-  color: #fff;
+  background: #00e5f4;
+  color: #000000;
   font-weight: 400;
-  border: 1px solid #df4c40;
+  border: 1px solid #000000;
 }
 
 .navbar {
@@ -185,5 +185,8 @@ a.navbar-link.login:hover {
 .btn {
   font-family: 'Roboto';
   font-weight: 400;
+}
+
+.col-md-12 {
 }
 
